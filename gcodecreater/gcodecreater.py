@@ -1,8 +1,8 @@
 newfile = 'gcodeoutput/apk_casserolescan.gcode' # puts written file into the gcodeoutput folder.  Change filename here
 overwrite = 'w' # x = not allowed (raises error); w = allowed
-speed = 3000 # speed in mm/min
+speed = 2000 # speed in mm/min
 stepsize = 3 # distance between rows
-rowsize = 210 # length of rows
+rowsize = 180 # length of rows
 time = 3 # approximate desired hours for entire script to run (user should err high)
 n_inloop = round(rowsize/(stepsize*2))
 dist_inloop = (stepsize + rowsize) * 2 * n_inloop # approximate distance travelled in mm through entire execution (fudged a bit to make time more accurate)
